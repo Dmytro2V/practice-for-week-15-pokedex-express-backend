@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkInsert('Pokemons', [
+  up:  async (queryInterface, Sequelize) => {
+     queryInterface.bulkInsert('Pokemons', [
       {
         number: 1,
         imageUrl: '/images/pokemon_snaps/1.svg',
@@ -10,10 +10,7 @@ module.exports = {
         attack: 49,
         defense: 49,
         type: 'grass',
-        moves: [
-          'tackle',
-          'vine whip'
-        ],
+        moves: "          'tackle',          'vine whip'        ",
         captured: true
       },
       {
@@ -23,11 +20,11 @@ module.exports = {
         attack: 62,
         defense: 63,
         type: 'grass',
-        moves: [
+        moves: `
           'tackle',
           'vine whip',
           'razor leaf'
-        ],
+        `,
         captured: true
       },
       {
@@ -37,11 +34,11 @@ module.exports = {
         attack: 82,
         defense: 83,
         type: 'grass',
-        moves: [
+        moves: `
           'tackle',
           'vine whip',
           'razor leaf'
-        ],
+        `,
         captured: true
       },
       {
@@ -51,11 +48,11 @@ module.exports = {
         attack: 52,
         defense: 43,
         type: 'fire',
-        moves: [
+        moves: `
           'scratch',
           'ember',
           'metal claw'
-        ],
+        `,
         captured: true
       },
       {
@@ -65,12 +62,12 @@ module.exports = {
         attack: 64,
         defense: 58,
         type: 'fire',
-        moves: [
+        moves: `
           'scratch',
           'ember',
           'metal claw',
           'flamethrower'
-        ],
+        `,
         captured: true
       },
       {
@@ -80,12 +77,12 @@ module.exports = {
         attack: 84,
         defense: 78,
         type: 'fire',
-        moves: [
+        moves: `
           'flamethrower',
           'wing attack',
           'slash',
           'metal claw'
-        ],
+        `,
         captured: true
       },
       {
@@ -95,15 +92,15 @@ module.exports = {
         attack: 48,
         defense: 65,
         type: 'water',
-        moves: [
+        moves: `
           'tackle',
           'bubble',
           'water gun'
-        ],
+        `,
         captured: true
       },
     ]);
-    await queryInterface.bulkInsert('Pokemons', [
+     queryInterface.bulkInsert('Pokemons', [
       {
         number: 8,
         imageUrl: '/images/pokemon_snaps/8.svg',
@@ -111,12 +108,12 @@ module.exports = {
         attack: 63,
         defense: 80,
         type: 'water',
-        moves: [
+        moves: `
           'tackle',
           'bubble',
           'water gun',
           'bite'
-        ],
+        `,
       },
       {
         number: 9,
@@ -125,12 +122,12 @@ module.exports = {
         attack: 83,
         defense: 100,
         type: 'water',
-        moves: [
+        moves: `
           'hydro pump',
           'bubble',
           'water gun',
           'bite'
-        ],
+        `,
       },
       {
         number: 10,
@@ -139,9 +136,9 @@ module.exports = {
         attack: 30,
         defense: 35,
         type: 'bug',
-        moves: [
+        moves: `
           'tackle'
-        ],
+        `,
       },
       {
         number: 12,
@@ -150,12 +147,12 @@ module.exports = {
         attack: 45,
         defense: 50,
         type: 'bug',
-        moves: [
+        moves: `
           'confusion',
           'gust',
           'psybeam',
           'silver wind'
-        ],
+        `,
       },
       {
         number: 13,
@@ -164,9 +161,9 @@ module.exports = {
         attack: 35,
         defense: 30,
         type: 'bug',
-        moves: [
+        moves: `
           'poison sting'
-        ],
+        `,
       },
       {
         number: 16,
@@ -175,10 +172,10 @@ module.exports = {
         attack: 45,
         defense: 40,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'gust'
-        ],
+        `,
       },
       {
         number: 17,
@@ -187,11 +184,11 @@ module.exports = {
         attack: 60,
         defense: 55,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'gust',
           'wing attack'
-        ],
+        `,
       },
       {
         number: 18,
@@ -200,11 +197,11 @@ module.exports = {
         attack: 80,
         defense: 75,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'gust',
           'wing attack'
-        ],
+        `,
       },
       {
         number: 19,
@@ -213,10 +210,10 @@ module.exports = {
         attack: 56,
         defense: 35,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'hyper fang'
-        ],
+        `,
       },
       {
         number: 20,
@@ -225,10 +222,10 @@ module.exports = {
         attack: 81,
         defense: 60,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'hyper fang'
-        ],
+        `,
       },
       {
         number: 21,
@@ -237,9 +234,9 @@ module.exports = {
         attack: 60,
         defense: 30,
         type: 'normal',
-        moves: [
+        moves: `
           'peck'
-        ],
+        `,
       },
       {
         number: 22,
@@ -248,10 +245,10 @@ module.exports = {
         attack: 90,
         defense: 65,
         type: 'normal',
-        moves: [
+        moves: `
           'peck',
           'drill peck'
-        ],
+        `,
       },
       {
         number: 23,
@@ -260,10 +257,10 @@ module.exports = {
         attack: 60,
         defense: 44,
         type: 'poison',
-        moves: [
+        moves: `
           'poison sting',
           'bite'
-        ],
+        `,
       },
       {
         number: 24,
@@ -272,11 +269,11 @@ module.exports = {
         attack: 85,
         defense: 69,
         type: 'poison',
-        moves: [
+        moves: `
           'poison sting',
           'bite',
           'acid'
-        ],
+        `,
       },
       {
         number: 25,
@@ -285,11 +282,11 @@ module.exports = {
         attack: 55,
         defense: 40,
         type: 'electric',
-        moves: [
+        moves: `
           'growl',
           'electro ball',
           'feint'
-        ]
+        `
       },
       {
         number: 26,
@@ -298,10 +295,10 @@ module.exports = {
         attack: 90,
         defense: 55,
         type: 'electric',
-        moves: [
+        moves: `
           'thundershock',
           'thunderbolt'
-        ],
+        `,
       },
       {
         number: 27,
@@ -310,10 +307,10 @@ module.exports = {
         attack: 75,
         defense: 85,
         type: 'ground',
-        moves: [
+        moves: `
           'scratch',
           'poison sting'
-        ],
+        `,
       },
       {
         number: 28,
@@ -322,12 +319,12 @@ module.exports = {
         attack: 100,
         defense: 110,
         type: 'ground',
-        moves: [
+        moves: `
           'scratch',
           'poison sting',
           'slash',
           'swift'
-        ],
+        `,
       },
       {
         number: 29,
@@ -336,9 +333,9 @@ module.exports = {
         attack: 47,
         defense: 52,
         type: 'poison',
-        moves: [
+        moves: `
           'scratch'
-        ],
+        `,
       },
       {
         number: 31,
@@ -347,12 +344,12 @@ module.exports = {
         attack: 82,
         defense: 87,
         type: 'poison',
-        moves: [
+        moves: `
           'scratch',
           'poison sting',
           'body slam',
           'superpower'
-        ],
+        `,
       },
       {
         number: 32,
@@ -361,9 +358,9 @@ module.exports = {
         attack: 57,
         defense: 40,
         type: 'poison',
-        moves: [
+        moves: `
           'peck'
-        ],
+        `,
       },
       {
         number: 34,
@@ -372,11 +369,11 @@ module.exports = {
         attack: 92,
         defense: 77,
         type: 'poison',
-        moves: [
+        moves: `
           'peck',
           'poison sting',
           'megahorn'
-        ],
+        `,
       },
       {
         number: 38,
@@ -385,9 +382,9 @@ module.exports = {
         attack: 76,
         defense: 75,
         type: 'fire',
-        moves: [
+        moves: `
           'ember'
-        ],
+        `,
       },
       {
         number: 41,
@@ -396,11 +393,11 @@ module.exports = {
         attack: 45,
         defense: 35,
         type: 'poison',
-        moves: [
+        moves: `
           'astonish',
           'bite',
           'wing attack'
-        ],
+        `,
       },
       {
         number: 42,
@@ -409,12 +406,12 @@ module.exports = {
         attack: 80,
         defense: 70,
         type: 'poison',
-        moves: [
+        moves: `
           'poison fang',
           'bite',
           'wing attack',
           'air cutter'
-        ],
+        `,
       },
       {
         number: 46,
@@ -423,9 +420,9 @@ module.exports = {
         attack: 70,
         defense: 55,
         type: 'bug',
-        moves: [
+        moves: `
           'scratch'
-        ],
+        `,
       },
       {
         number: 47,
@@ -434,10 +431,10 @@ module.exports = {
         attack: 95,
         defense: 80,
         type: 'bug',
-        moves: [
+        moves: `
           'scratch',
           'slash'
-        ],
+        `,
       },
       {
         number: 48,
@@ -446,10 +443,10 @@ module.exports = {
         attack: 55,
         defense: 50,
         type: 'bug',
-        moves: [
+        moves: `
           'tackle',
           'confusion'
-        ],
+        `,
       },
       {
         number: 49,
@@ -458,12 +455,12 @@ module.exports = {
         attack: 65,
         defense: 60,
         type: 'bug',
-        moves: [
+        moves: `
           'psybeam',
           'psychic',
           'confusion',
           'gust'
-        ],
+        `,
       },
       {
         number: 50,
@@ -472,9 +469,9 @@ module.exports = {
         attack: 55,
         defense: 25,
         type: 'ground',
-        moves: [
+        moves: `
           'scratch'
-        ],
+        `,
       },
       {
         number: 51,
@@ -483,11 +480,11 @@ module.exports = {
         attack: 80,
         defense: 50,
         type: 'ground',
-        moves: [
+        moves: `
           'scratch',
           'slash',
           'earthquake'
-        ],
+        `,
       },
       {
         number: 52,
@@ -496,10 +493,10 @@ module.exports = {
         attack: 45,
         defense: 35,
         type: 'normal',
-        moves: [
+        moves: `
           'scratch',
           'bite'
-        ],
+        `,
       },
       {
         number: 53,
@@ -508,11 +505,11 @@ module.exports = {
         attack: 70,
         defense: 60,
         type: 'normal',
-        moves: [
+        moves: `
           'scratch',
           'bite',
           'slash'
-        ],
+        `,
       },
       {
         number: 54,
@@ -521,10 +518,10 @@ module.exports = {
         attack: 52,
         defense: 48,
         type: 'water',
-        moves: [
+        moves: `
           'scratch',
           'confusion'
-        ],
+        `,
       },
       {
         number: 55,
@@ -533,11 +530,11 @@ module.exports = {
         attack: 82,
         defense: 78,
         type: 'water',
-        moves: [
+        moves: `
           'scratch',
           'confusion',
           'hydro pump'
-        ],
+        `,
       },
       {
         number: 56,
@@ -546,11 +543,11 @@ module.exports = {
         attack: 80,
         defense: 35,
         type: 'fighting',
-        moves: [
+        moves: `
           'scratch',
           'low kick',
           'karate chop'
-        ],
+        `,
       },
       {
         number: 57,
@@ -559,12 +556,12 @@ module.exports = {
         attack: 105,
         defense: 60,
         type: 'fighting',
-        moves: [
+        moves: `
           'scratch',
           'low kick',
           'karate chop',
           'cross chop'
-        ],
+        `,
       },
       {
         number: 59,
@@ -573,10 +570,10 @@ module.exports = {
         attack: 110,
         defense: 80,
         type: 'fire',
-        moves: [
+        moves: `
           'bite',
           'ember'
-        ],
+        `,
       },
       {
         number: 60,
@@ -585,10 +582,10 @@ module.exports = {
         attack: 50,
         defense: 40,
         type: 'water',
-        moves: [
+        moves: `
           'bubble',
           'water gun'
-        ],
+        `,
       },
       {
         number: 62,
@@ -597,9 +594,9 @@ module.exports = {
         attack: 85,
         defense: 95,
         type: 'water',
-        moves: [
+        moves: `
           'water gun'
-        ],
+        `,
       },
       {
         number: 65,
@@ -608,11 +605,11 @@ module.exports = {
         attack: 50,
         defense: 45,
         type: 'psychic',
-        moves: [
+        moves: `
           'confusion',
           'psybeam',
           'psychic'
-        ],
+        `,
       },
       {
         number: 66,
@@ -621,10 +618,10 @@ module.exports = {
         attack: 80,
         defense: 50,
         type: 'fighting',
-        moves: [
+        moves: `
           'low kick',
           'karate chop'
-        ],
+        `,
       },
       {
         number: 68,
@@ -633,12 +630,12 @@ module.exports = {
         attack: 130,
         defense: 80,
         type: 'fighting',
-        moves: [
+        moves: `
           'low kick',
           'karate chop',
           'cross chop',
           'dynamicpunch'
-        ],
+        `,
       },
       {
         number: 69,
@@ -647,9 +644,9 @@ module.exports = {
         attack: 75,
         defense: 35,
         type: 'grass',
-        moves: [
+        moves: `
           'vine whip'
-        ],
+        `,
       },
       {
         number: 71,
@@ -658,10 +655,10 @@ module.exports = {
         attack: 105,
         defense: 65,
         type: 'grass',
-        moves: [
+        moves: `
           'vine whip',
           'razor leaf'
-        ],
+        `,
       },
       {
         number: 72,
@@ -670,12 +667,12 @@ module.exports = {
         attack: 40,
         defense: 35,
         type: 'water',
-        moves: [
+        moves: `
           'poison sting',
           'constrict',
           'acid',
           'bubblebeam'
-        ],
+        `,
       },
       {
         number: 73,
@@ -684,12 +681,12 @@ module.exports = {
         attack: 70,
         defense: 65,
         type: 'water',
-        moves: [
+        moves: `
           'hydro pump',
           'constrict',
           'acid',
           'bubblebeam'
-        ],
+        `,
       },
       {
         number: 74,
@@ -698,10 +695,10 @@ module.exports = {
         attack: 80,
         defense: 100,
         type: 'rock',
-        moves: [
+        moves: `
           'tackle',
           'rock throw'
-        ],
+        `,
       },
       {
         number: 76,
@@ -710,11 +707,11 @@ module.exports = {
         attack: 110,
         defense: 130,
         type: 'rock',
-        moves: [
+        moves: `
           'tackle',
           'rock throw',
           'earthquake'
-        ],
+        `,
       },
       {
         number: 77,
@@ -723,10 +720,10 @@ module.exports = {
         attack: 85,
         defense: 55,
         type: 'fire',
-        moves: [
+        moves: `
           'ember',
           'stomp'
-        ],
+        `,
       },
       {
         number: 78,
@@ -735,11 +732,11 @@ module.exports = {
         attack: 100,
         defense: 70,
         type: 'fire',
-        moves: [
+        moves: `
           'ember',
           'stomp',
           'fire blast'
-        ],
+        `,
       },
       {
         number: 79,
@@ -748,12 +745,12 @@ module.exports = {
         attack: 65,
         defense: 65,
         type: 'water',
-        moves: [
+        moves: `
           'tackle',
           'water gun',
           'confusion',
           'headbutt'
-        ],
+        `,
       },
       {
         number: 80,
@@ -762,12 +759,12 @@ module.exports = {
         attack: 75,
         defense: 110,
         type: 'water',
-        moves: [
+        moves: `
           'psychic',
           'water gun',
           'confusion',
           'headbutt'
-        ],
+        `,
       },
       {
         number: 81,
@@ -776,11 +773,11 @@ module.exports = {
         attack: 35,
         defense: 70,
         type: 'electric',
-        moves: [
+        moves: `
           'tackle',
           'thundershock',
           'spark'
-        ],
+        `,
       },
       {
         number: 82,
@@ -789,12 +786,12 @@ module.exports = {
         attack: 60,
         defense: 95,
         type: 'electric',
-        moves: [
+        moves: `
           'tackle',
           'thundershock',
           'spark',
           'zap cannon'
-        ],
+        `,
       },
       {
         number: 83,
@@ -803,10 +800,10 @@ module.exports = {
         attack: 65,
         defense: 55,
         type: 'normal',
-        moves: [
+        moves: `
           'peck',
           'slash'
-        ],
+        `,
       },
       {
         number: 84,
@@ -815,9 +812,9 @@ module.exports = {
         attack: 85,
         defense: 45,
         type: 'normal',
-        moves: [
+        moves: `
           'peck'
-        ],
+        `,
       },
       {
         number: 85,
@@ -826,10 +823,10 @@ module.exports = {
         attack: 110,
         defense: 70,
         type: 'normal',
-        moves: [
+        moves: `
           'peck',
           'drill peck'
-        ],
+        `,
       },
       {
         number: 86,
@@ -838,11 +835,11 @@ module.exports = {
         attack: 45,
         defense: 55,
         type: 'water',
-        moves: [
+        moves: `
           'headbutt',
           'icy wind',
           'aurora beam'
-        ],
+        `,
       },
       {
         number: 87,
@@ -851,12 +848,12 @@ module.exports = {
         attack: 70,
         defense: 80,
         type: 'water',
-        moves: [
+        moves: `
           'ice beam',
           'headbutt',
           'icy wind',
           'aurora beam'
-        ],
+        `,
       },
       {
         number: 88,
@@ -865,10 +862,10 @@ module.exports = {
         attack: 80,
         defense: 50,
         type: 'poison',
-        moves: [
+        moves: `
           'pound',
           'sludge'
-        ],
+        `,
       },
       {
         number: 89,
@@ -877,11 +874,11 @@ module.exports = {
         attack: 105,
         defense: 75,
         type: 'poison',
-        moves: [
+        moves: `
           'pound',
           'sludge',
           'sludge bomb'
-        ],
+        `,
       },
       {
         number: 91,
@@ -890,9 +887,9 @@ module.exports = {
         attack: 95,
         defense: 180,
         type: 'water',
-        moves: [
+        moves: `
           'aurora beam'
-        ],
+        `,
       },
       {
         number: 92,
@@ -901,10 +898,10 @@ module.exports = {
         attack: 35,
         defense: 30,
         type: 'ghost',
-        moves: [
+        moves: `
           'tackle',
           'lick'
-        ],
+        `,
       },
       {
         number: 94,
@@ -913,12 +910,12 @@ module.exports = {
         attack: 65,
         defense: 60,
         type: 'ghost',
-        moves: [
+        moves: `
           'tackle',
           'lick',
           'shadow punch',
           'shadow ball'
-        ],
+        `,
       },
       {
         number: 95,
@@ -927,12 +924,12 @@ module.exports = {
         attack: 45,
         defense: 160,
         type: 'rock',
-        moves: [
+        moves: `
           'iron tail',
           'rock throw',
           'dragonbreath',
           'slam'
-        ],
+        `,
       },
       {
         number: 96,
@@ -941,11 +938,11 @@ module.exports = {
         attack: 48,
         defense: 45,
         type: 'psychic',
-        moves: [
+        moves: `
           'pound',
           'confusion',
           'headbutt'
-        ],
+        `,
       },
       {
         number: 97,
@@ -954,12 +951,12 @@ module.exports = {
         attack: 73,
         defense: 70,
         type: 'psychic',
-        moves: [
+        moves: `
           'pound',
           'confusion',
           'headbutt',
           'psychic'
-        ],
+        `,
       },
       {
         number: 98,
@@ -968,12 +965,12 @@ module.exports = {
         attack: 105,
         defense: 90,
         type: 'water',
-        moves: [
+        moves: `
           'bubble',
           'vicegrip',
           'mud shot',
           'stomp'
-        ],
+        `,
       },
       {
         number: 99,
@@ -982,12 +979,12 @@ module.exports = {
         attack: 130,
         defense: 115,
         type: 'water',
-        moves: [
+        moves: `
           'stomp',
           'crabhammer',
           'vicegrip',
           'mud shot'
-        ],
+        `,
       },
       {
         number: 100,
@@ -996,10 +993,10 @@ module.exports = {
         attack: 30,
         defense: 50,
         type: 'electric',
-        moves: [
+        moves: `
           'tackle',
           'spark'
-        ],
+        `,
       },
       {
         number: 101,
@@ -1008,11 +1005,11 @@ module.exports = {
         attack: 50,
         defense: 70,
         type: 'electric',
-        moves: [
+        moves: `
           'tackle',
           'spark',
           'swift'
-        ],
+        `,
       },
       {
         number: 103,
@@ -1021,11 +1018,11 @@ module.exports = {
         attack: 95,
         defense: 85,
         type: 'grass',
-        moves: [
+        moves: `
           'confusion',
           'stomp',
           'egg bomb'
-        ],
+        `,
       },
       {
         number: 104,
@@ -1034,10 +1031,10 @@ module.exports = {
         attack: 50,
         defense: 95,
         type: 'ground',
-        moves: [
+        moves: `
           'bone club',
           'headbutt'
-        ],
+        `,
       },
       {
         number: 105,
@@ -1046,10 +1043,10 @@ module.exports = {
         attack: 80,
         defense: 110,
         type: 'ground',
-        moves: [
+        moves: `
           'bone club',
           'headbutt'
-        ],
+        `,
       },
       {
         number: 106,
@@ -1058,9 +1055,9 @@ module.exports = {
         attack: 120,
         defense: 53,
         type: 'fighting',
-        moves: [
+        moves: `
           'rolling kick'
-        ],
+        `,
       },
       {
         number: 107,
@@ -1069,12 +1066,12 @@ module.exports = {
         attack: 105,
         defense: 79,
         type: 'fighting',
-        moves: [
+        moves: `
           'mega punch',
           'ice punch',
           'fire punch',
           'sky uppercut'
-        ],
+        `,
       },
       {
         number: 108,
@@ -1083,11 +1080,11 @@ module.exports = {
         attack: 55,
         defense: 75,
         type: 'normal',
-        moves: [
+        moves: `
           'lick',
           'stomp',
           'slam'
-        ],
+        `,
       },
       {
         number: 109,
@@ -1096,11 +1093,11 @@ module.exports = {
         attack: 65,
         defense: 95,
         type: 'poison',
-        moves: [
+        moves: `
           'tackle',
           'smog',
           'sludge'
-        ],
+        `,
       },
       {
         number: 110,
@@ -1109,11 +1106,11 @@ module.exports = {
         attack: 90,
         defense: 120,
         type: 'poison',
-        moves: [
+        moves: `
           'tackle',
           'smog',
           'sludge'
-        ],
+        `,
       },
       {
         number: 111,
@@ -1122,10 +1119,10 @@ module.exports = {
         attack: 85,
         defense: 95,
         type: 'ground',
-        moves: [
+        moves: `
           'horn attack',
           'stomp'
-        ],
+        `,
       },
       {
         number: 112,
@@ -1134,12 +1131,12 @@ module.exports = {
         attack: 130,
         defense: 120,
         type: 'ground',
-        moves: [
+        moves: `
           'horn attack',
           'stomp',
           'earthquake',
           'megahorn'
-        ],
+        `,
       },
       {
         number: 113,
@@ -1148,10 +1145,10 @@ module.exports = {
         attack: 5,
         defense: 5,
         type: 'normal',
-        moves: [
+        moves: `
           'pound',
           'egg bomb'
-        ],
+        `,
       },
       {
         number: 114,
@@ -1160,11 +1157,11 @@ module.exports = {
         attack: 55,
         defense: 115,
         type: 'grass',
-        moves: [
+        moves: `
           'constrict',
           'vine whip',
           'slam'
-        ],
+        `,
       },
       {
         number: 115,
@@ -1173,11 +1170,11 @@ module.exports = {
         attack: 95,
         defense: 80,
         type: 'normal',
-        moves: [
+        moves: `
           'bite',
           'mega punch',
           'dizzy punch'
-        ],
+        `,
       },
       {
         number: 116,
@@ -1186,11 +1183,11 @@ module.exports = {
         attack: 40,
         defense: 70,
         type: 'water',
-        moves: [
+        moves: `
           'bubble',
           'water gun',
           'twister'
-        ],
+        `,
       },
       {
         number: 117,
@@ -1199,12 +1196,12 @@ module.exports = {
         attack: 65,
         defense: 95,
         type: 'water',
-        moves: [
+        moves: `
           'bubble',
           'water gun',
           'twister',
           'hydro pump'
-        ],
+        `,
       },
       {
         number: 118,
@@ -1213,10 +1210,10 @@ module.exports = {
         attack: 67,
         defense: 60,
         type: 'water',
-        moves: [
+        moves: `
           'peck',
           'horn attack'
-        ],
+        `,
       },
       {
         number: 119,
@@ -1225,12 +1222,12 @@ module.exports = {
         attack: 92,
         defense: 65,
         type: 'water',
-        moves: [
+        moves: `
           'peck',
           'horn attack',
           'waterfall',
           'megahorn'
-        ],
+        `,
       },
       {
         number: 121,
@@ -1239,10 +1236,10 @@ module.exports = {
         attack: 75,
         defense: 85,
         type: 'water',
-        moves: [
+        moves: `
           'water gun',
           'swift'
-        ],
+        `,
       },
       {
         number: 122,
@@ -1251,12 +1248,12 @@ module.exports = {
         attack: 45,
         defense: 65,
         type: 'psychic',
-        moves: [
+        moves: `
           'confusion',
           'magical leaf',
           'psybeam',
           'psychic'
-        ],
+        `,
       },
       {
         number: 123,
@@ -1265,10 +1262,10 @@ module.exports = {
         attack: 110,
         defense: 80,
         type: 'bug',
-        moves: [
+        moves: `
           'wing attack',
           'slash'
-        ],
+        `,
       },
       {
         number: 124,
@@ -1277,12 +1274,12 @@ module.exports = {
         attack: 50,
         defense: 35,
         type: 'ice',
-        moves: [
+        moves: `
           'body slam',
           'blizzard',
           'powder snow',
           'ice punch'
-        ],
+        `,
       },
       {
         number: 125,
@@ -1291,12 +1288,12 @@ module.exports = {
         attack: 83,
         defense: 57,
         type: 'electric',
-        moves: [
+        moves: `
           'thunderpunch',
           'swift',
           'thunderbolt',
           'thunder'
-        ],
+        `,
       },
       {
         number: 126,
@@ -1305,12 +1302,12 @@ module.exports = {
         attack: 95,
         defense: 57,
         type: 'fire',
-        moves: [
+        moves: `
           'fire blast',
           'smog',
           'fire punch',
           'flamethrower'
-        ],
+        `,
       },
       {
         number: 127,
@@ -1319,9 +1316,9 @@ module.exports = {
         attack: 125,
         defense: 100,
         type: 'bug',
-        moves: [
+        moves: `
           'vicegrip'
-        ],
+        `,
       },
       {
         number: 128,
@@ -1330,10 +1327,10 @@ module.exports = {
         attack: 100,
         defense: 95,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'horn attack'
-        ],
+        `,
       },
       {
         number: 129,
@@ -1342,9 +1339,9 @@ module.exports = {
         attack: 10,
         defense: 55,
         type: 'water',
-        moves: [
+        moves: `
           'tackle'
-        ],
+        `,
       },
       {
         number: 130,
@@ -1353,11 +1350,11 @@ module.exports = {
         attack: 125,
         defense: 79,
         type: 'water',
-        moves: [
+        moves: `
           'bite',
           'twister',
           'hydro pump'
-        ],
+        `,
       },
       {
         number: 131,
@@ -1366,12 +1363,12 @@ module.exports = {
         attack: 85,
         defense: 80,
         type: 'water',
-        moves: [
+        moves: `
           'water gun',
           'body slam',
           'ice beam',
           'hydro pump'
-        ],
+        `,
       },
       {
         number: 133,
@@ -1380,10 +1377,10 @@ module.exports = {
         attack: 55,
         defense: 50,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'bite'
-        ],
+        `,
       },
       {
         number: 135,
@@ -1392,11 +1389,11 @@ module.exports = {
         attack: 65,
         defense: 60,
         type: 'electric',
-        moves: [
+        moves: `
           'tackle',
           'thundershock',
           'thunder'
-        ],
+        `,
       },
       {
         number: 136,
@@ -1405,12 +1402,12 @@ module.exports = {
         attack: 130,
         defense: 60,
         type: 'fire',
-        moves: [
+        moves: `
           'flamethrower',
           'ember',
           'bite',
           'smog'
-        ],
+        `,
       },
       {
         number: 137,
@@ -1419,11 +1416,11 @@ module.exports = {
         attack: 60,
         defense: 70,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'psybeam',
           'zap cannon'
-        ],
+        `,
       },
       {
         number: 138,
@@ -1432,12 +1429,12 @@ module.exports = {
         attack: 40,
         defense: 100,
         type: 'rock',
-        moves: [
+        moves: `
           'constrict',
           'bite',
           'water gun',
           'mud shot'
-        ],
+        `,
       },
       {
         number: 139,
@@ -1446,12 +1443,12 @@ module.exports = {
         attack: 60,
         defense: 125,
         type: 'rock',
-        moves: [
+        moves: `
           'ancientpower',
           'hydro pump',
           'water gun',
           'mud shot'
-        ],
+        `,
       },
       {
         number: 140,
@@ -1460,10 +1457,10 @@ module.exports = {
         attack: 80,
         defense: 90,
         type: 'rock',
-        moves: [
+        moves: `
           'scratch',
           'mud shot'
-        ],
+        `,
       },
       {
         number: 141,
@@ -1472,12 +1469,12 @@ module.exports = {
         attack: 115,
         defense: 105,
         type: 'rock',
-        moves: [
+        moves: `
           'scratch',
           'mud shot',
           'slash',
           'ancientpower'
-        ],
+        `,
       },
       {
         number: 142,
@@ -1486,11 +1483,11 @@ module.exports = {
         attack: 105,
         defense: 65,
         type: 'rock',
-        moves: [
+        moves: `
           'wing attack',
           'bite',
           'ancientpower'
-        ],
+        `,
       },
       {
         number: 143,
@@ -1499,12 +1496,12 @@ module.exports = {
         attack: 110,
         defense: 65,
         type: 'normal',
-        moves: [
+        moves: `
           'tackle',
           'headbutt',
           'snore',
           'body slam'
-        ],
+        `,
       },
       {
         number: 144,
@@ -1513,12 +1510,12 @@ module.exports = {
         attack: 85,
         defense: 100,
         type: 'ice',
-        moves: [
+        moves: `
           'gust',
           'powder snow',
           'ice beam',
           'blizzard'
-        ],
+        `,
       },
       {
         number: 145,
@@ -1527,12 +1524,12 @@ module.exports = {
         attack: 90,
         defense: 85,
         type: 'electric',
-        moves: [
+        moves: `
           'peck',
           'thundershock',
           'drill peck',
           'thunder'
-        ],
+        `,
       },
       {
         number: 146,
@@ -1541,12 +1538,12 @@ module.exports = {
         attack: 100,
         defense: 90,
         type: 'fire',
-        moves: [
+        moves: `
           'wing attack',
           'ember',
           'flamethrower',
           'heat wave'
-        ],
+        `,
       },
       {
         number: 147,
@@ -1555,10 +1552,10 @@ module.exports = {
         attack: 64,
         defense: 45,
         type: 'dragon',
-        moves: [
+        moves: `
           'twister',
           'slam'
-        ],
+        `,
       },
       {
         number: 148,
@@ -1567,10 +1564,10 @@ module.exports = {
         attack: 84,
         defense: 65,
         type: 'dragon',
-        moves: [
+        moves: `
           'twister',
           'slam'
-        ],
+        `,
       },
       {
         number: 149,
@@ -1579,11 +1576,11 @@ module.exports = {
         attack: 134,
         defense: 95,
         type: 'dragon',
-        moves: [
+        moves: `
           'twister',
           'slam',
           'wing attack'
-        ],
+        `,
       },
       {
         number: 150,
@@ -1592,11 +1589,11 @@ module.exports = {
         attack: 110,
         defense: 90,
         type: 'psychic',
-        moves: [
+        moves: `
           'confusion',
           'swift',
           'psychic'
-        ],
+        `,
       },
       {
         number: 151,
@@ -1605,17 +1602,17 @@ module.exports = {
         attack: 100,
         defense: 100,
         type: 'psychic',
-        moves: [
+        moves: `
           'pound',
           'mega punch',
           'psychic',
           'ancientpower'
-        ],
+        `,
       },
     ]);
   },
 
-  down: async (queryInterface, Sequelize) => {
-    return await queryInterface.bulkDelete('Pokemons');
+  down:  async (queryInterface, Sequelize) => {
+    return  queryInterface.bulkDelete('Pokemons');
   }
 };

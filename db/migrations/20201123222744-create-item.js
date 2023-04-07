@@ -1,7 +1,8 @@
 'use strict';
+// removed async /await
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable("Items", {
+  up:  async (queryInterface, Sequelize) => {
+     await queryInterface.createTable("Items", {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -36,12 +37,12 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.fn("now"),
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.fn("now"),
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
     });
   },

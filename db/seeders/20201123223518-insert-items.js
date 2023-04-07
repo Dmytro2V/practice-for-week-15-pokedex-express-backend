@@ -32,11 +32,11 @@ function* generateItems() {
 }
 
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
-    return await queryInterface.bulkInsert("Items", [...generateItems()]);
+  up:  (queryInterface, Sequelize) => {
+    return  queryInterface.bulkInsert("Items", [...generateItems()]);
   },
 
-  down: async (queryInterface, Sequelize) => {
-    return await queryInterface.bulkDelete("Items");
+  down:  (queryInterface, Sequelize) => {
+    return queryInterface.bulkDelete("Items");
   },
 };
