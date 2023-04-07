@@ -17,10 +17,13 @@ router.get('/', asyncHandler(async function(_req, res) {
 }));
 
 router.post(
-  '/',
+  '/', 
   pokemonValidations.validateCreate,
   asyncHandler(async function (req, res) {
+    
     const id = await PokemonRepository.create(req.body);
+    console.log("🚀 ~ file: pokemon.js:25 ~ id:", id)
+    
     return res.redirect(`${req.baseUrl}/${id}`);
   })
 );

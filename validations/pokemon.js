@@ -31,7 +31,10 @@ const type = check('type')
   .notEmpty()
   .withMessage('cannot be empty')
   .isIn(types);
-const moves = check('moves').isArray();
+const moves = check('moves')
+  .notEmpty()
+  .withMessage('cannot be empty');
+//.isArray();
 
 exports.validateCreate = [
   number,
@@ -45,7 +48,7 @@ exports.validateCreate = [
 ];
 
 exports.validateUpdate = [
-  id,
+  //id,
   number,
   attack,
   defense,

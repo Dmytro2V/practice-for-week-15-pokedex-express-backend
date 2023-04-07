@@ -28,10 +28,14 @@ function* generateItems() {
 }
 
 async function create(details) {
+  
   details.items = [...generateItems()];
   const pokemon = await Pokemon.create(details, { include: ["items"] });
+  console.log("🚀 ~ file: pokemon-repository.js:34 ~ create ~ pokemon:", pokemon)
+  console.log("🚀 ~ file: pokemon-repository.js:37 ~ create ~ pokemon.id:", pokemon.id)
   return pokemon.id;
 }
+  
 
 async function update(details) {
   const id = details.id;

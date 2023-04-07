@@ -2,7 +2,7 @@
 
 module.exports = {
   up:  async (queryInterface, Sequelize) => {
-     queryInterface.bulkInsert('Pokemons', [
+     await queryInterface.bulkInsert('Pokemons', [
       {
         number: 1,
         imageUrl: '/images/pokemon_snaps/1.svg',
@@ -100,7 +100,7 @@ module.exports = {
         captured: true
       },
     ]);
-     queryInterface.bulkInsert('Pokemons', [
+     await queryInterface.bulkInsert('Pokemons', [
       {
         number: 8,
         imageUrl: '/images/pokemon_snaps/8.svg',
@@ -113,7 +113,7 @@ module.exports = {
           'bubble',
           'water gun',
           'bite'
-        `,
+        `,               
       },
       {
         number: 9,
@@ -1613,6 +1613,6 @@ module.exports = {
   },
 
   down:  async (queryInterface, Sequelize) => {
-    return  queryInterface.bulkDelete('Pokemons');
+    return  await queryInterface.bulkDelete('Pokemons');
   }
 };

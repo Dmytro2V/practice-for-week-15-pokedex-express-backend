@@ -66,7 +66,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     moves: {
       allowNull: false,
-      type: DataTypes.ARRAY(DataTypes.STRING(30))
+      type: DataTypes.STRING(30)
     },
     encounterRate: {
       type: DataTypes.DECIMAL(3, 2),
